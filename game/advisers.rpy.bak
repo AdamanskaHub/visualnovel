@@ -1,0 +1,14 @@
+label adviserchat:
+    $ datecounter += 1
+    menu :
+        "Who should I go see?"
+
+        "Mirna" if gonetothevillage_flag == False:
+            call mirnadate
+        "Leo":
+            call leodate
+        "Cassandra":
+            call cassandradate
+        "Alistair":
+            call alistairdate
+    return
